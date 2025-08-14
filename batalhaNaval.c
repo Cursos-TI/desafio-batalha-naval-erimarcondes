@@ -23,6 +23,18 @@ int main(){
         tabuleiro[1+n][7] = navioV[n];
     }
 
+    // Navio Diagonal 1
+    int navioD1[3] = {3, 3, 3};
+    for (int n = 0; n < 3; n++) {
+        tabuleiro[6+n][0+n] = navioD1[n];
+    }
+
+    // Navio Diagonal 2
+    int navioD2[3] = {3, 3, 3};
+    for (int n = 0; n < 3; n++) {
+        tabuleiro[4+n][9-n] = navioD2[n];
+    }
+
     printf("TABULEIRO - BATALHA NAVAL \n\n\t");
     // Mostra as colunas
     for (int i = 0; i < 10; i++) {
